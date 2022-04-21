@@ -16,7 +16,7 @@ node() {
         withMaven(maven: 'maven352') {
             sh """
 			cd ${env.WORKSPACE_LOCAL}
-			mvn clean test -e
+			mvn clean test
 		"""
         }
     }
